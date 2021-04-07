@@ -5,5 +5,5 @@ jobs:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v2
-      - run: cat README.md
+      - run: false
 
