@@ -9,6 +9,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+        with:
+          path: 'dje123'
 
       # - name: Check brew version
       #   run: "brew --version"
