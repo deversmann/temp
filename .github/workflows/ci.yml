@@ -10,13 +10,13 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Check brew version
-        run: "brew --version"
+      # - name: Check brew version
+      #   run: "brew --version"
 
-      - name: Check brew installations
-        run: |
-          brew list
-          brew deps --tree --installed
+      # - name: Check brew installations
+      #   run: |
+      #     brew list
+      #     brew deps --tree --installed
 
       - name: Path?
         run: echo $PATH
