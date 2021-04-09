@@ -16,3 +16,7 @@ jobs:
         run: |
           brew install --cask munki
 
+      - name: Check brew installations
+        run: |
+          which managedsoftwareupdate
+
