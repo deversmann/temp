@@ -1,26 +1,18 @@
 name: test
 on: [push]
-defaults:
-  run:
-    working-directory: 'dje123'
+# defaults:
+#   run:
+#     working-directory: 'dje123'
 jobs:
   test-out-command:
     runs-on: macos-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-        with:
-          path: 'dje123'
+        # with:
+        #   path: 'dje123'
 
       - name: Check brew installations
         run: |
-          brew list
+          brew install --cask munki
 
-      - name: Path?
-        run: echo $PATH
-
-      - name: PWD
-        run: pwd
-
-      - name: MSC?
-        run: which managedsoftwareupdate
